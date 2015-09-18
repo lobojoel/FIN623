@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light" >
+
+    <TextView
+        android:id="@+id/textViewCostOfGoodsSold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSales"
+        android:layout_below="@+id/textViewSales"
+        android:layout_marginTop="22dp"
+        android:text="@string/COGS"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextSales"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewSales"
+        android:layout_alignBottom="@+id/textViewSales"
+        android:layout_alignLeft="@+id/editTextCostOfGoodsSold"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1090" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextCostOfGoodsSold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCostOfGoodsSold"
+        android:layout_alignBottom="@+id/textViewCostOfGoodsSold"
+        android:layout_toRightOf="@+id/textViewSales"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="867" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonCalculate"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textViewSales"
+        android:text="@string/Reset_Values" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu" />
+
+    <TextView
+        android:id="@+id/textViewSales"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Sales"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewDebt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditTextDebt"
+        android:layout_alignLeft="@+id/TextViewAssets"
+        android:text="@string/Debt"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewDebt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditTextDebt2"
+        android:layout_alignLeft="@+id/TextViewCouponRate"
+        android:text="@string/Debt_2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewCouponRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EditTextCouponRate"
+        android:layout_alignBottom="@+id/EditTextCouponRate"
+        android:layout_alignLeft="@+id/TextViewDebt"
+        android:text="@string/Coupon_Rate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_alignRight="@+id/TextViewCouponRate"
+        android:text="@string/Calculate" />
+
+    <TextView
+        android:id="@+id/TextViewAssets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditTextAssets"
+        android:layout_alignLeft="@+id/textViewTaxRate"
+        android:text="@string/Assets"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/EditTextCouponRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonReset"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="24dp"
+        android:layout_toRightOf="@+id/textViewExpenses"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="10.0" />
+
+    <EditText
+        android:id="@+id/EditTextDebt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditTextCouponRate"
+        android:layout_toRightOf="@+id/textViewExpenses"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="220" />
+
+    <EditText
+        android:id="@+id/EditTextDebt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textViewExpenses"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/EditTextAssets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditTextDebt"
+        android:layout_alignLeft="@+id/EditTextDebt"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1400" />
+
+    <EditText
+        android:id="@+id/editTextTaxRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditTextAssets"
+        android:layout_toRightOf="@+id/textViewExpenses"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="40.0" />
+
+    <TextView
+        android:id="@+id/textViewTaxRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextTaxRate"
+        android:layout_alignBottom="@+id/editTextTaxRate"
+        android:layout_alignLeft="@+id/textViewExpenses"
+        android:text="@string/TaxRate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextExpenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewExpenses"
+        android:layout_alignLeft="@+id/editTextTaxRate"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="44" />
+
+    <TextView
+        android:id="@+id/textViewExpenses"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextTaxRate"
+        android:layout_toLeftOf="@+id/editTextCostOfGoodsSold"
+        android:text="Expenses"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

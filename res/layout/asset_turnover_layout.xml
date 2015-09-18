@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light" >
+
+    <TextView
+        android:id="@+id/textViewInterestExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewROE"
+        android:layout_below="@+id/textViewROE"
+        android:layout_marginTop="22dp"
+        android:text="@string/Interest_Expense"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextROE"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewROE"
+        android:layout_alignBottom="@+id/textViewROE"
+        android:layout_alignLeft="@+id/editTextInterestExpense"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="12.20" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextInterestExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewInterestExpense"
+        android:layout_alignBottom="@+id/textViewInterestExpense"
+        android:layout_toRightOf="@+id/textViewROE"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="8300" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonCalculate"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textViewROE"
+        android:text="@string/Reset_Values" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu" />
+
+    <TextView
+        android:id="@+id/textViewROE"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/ROE"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:text="@string/Calculate" />
+
+    <TextView
+        android:id="@+id/TextViewGrossProfits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditTextGrossProfits"
+        android:layout_alignLeft="@+id/textViewEquityMultiplier"
+        android:text="@string/Gross_Profits"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/EditTextCOGSPercentSales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textViewCouponRateBonds"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="55.00" />
+
+    <EditText
+        android:id="@+id/EditTextGrossProfits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditTextCOGSPercentSales"
+        android:layout_alignLeft="@+id/EditTextCOGSPercentSales"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1823300" />
+
+    <EditText
+        android:id="@+id/editTextEquityMultiplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditTextGrossProfits"
+        android:layout_toRightOf="@+id/textViewCouponRateBonds"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="2.2" />
+
+    <EditText
+        android:id="@+id/editTextCouponRateBonds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewCouponRateBonds"
+        android:layout_alignLeft="@+id/editTextEquityMultiplier"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="7.70" />
+
+    <TextView
+        android:id="@+id/textViewCouponRateBonds"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextEquityMultiplier"
+        android:layout_toLeftOf="@+id/editTextInterestExpense"
+        android:text="@string/Coupon_Rate_On_Bonds"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewEquityMultiplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextEquityMultiplier"
+        android:layout_alignLeft="@+id/textViewCouponRateBonds"
+        android:text="@string/Equity_Multiplier"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewCOGSPercentSales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EditTextCOGSPercentSales"
+        android:layout_alignBottom="@+id/EditTextCOGSPercentSales"
+        android:layout_alignLeft="@+id/TextViewGrossProfits"
+        android:layout_alignRight="@+id/textViewInterestExpense"
+        android:text="@string/COGS_Percent_Of_Sales"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

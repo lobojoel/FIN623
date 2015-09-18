@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light" >
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonCalculate"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textViewMaturityYears"
+        android:text="@string/Reset_Values" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textViewNumOfBonds"
+        android:text="@string/Calculate" />
+
+    <EditText
+        android:id="@+id/EditTextDividendPreferredStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditTextPreferredStock"
+        android:layout_toRightOf="@+id/textViewMaturityYears"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="5.40"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/EditTextNumSharesPreferred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditTextDividendPreferredStock"
+        android:layout_toRightOf="@+id/textViewMaturityYears"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="30300"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/EditTextCommonPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextNumSharesPreferred"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditTextNumSharesPreferred"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="27.76"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextViewCommonPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditTextCommonPrice"
+        android:layout_alignLeft="@+id/TextViewNumOfSharesPreferred"
+        android:text="@string/Common_Price"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextDebtMaturity"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewMaturityYears"
+        android:layout_alignLeft="@+id/editTextNumOfBonds"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="15"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewMaturityYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/Debt_Maturity"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewNumOfBonds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewMaturityYears"
+        android:layout_below="@+id/textViewMaturityYears"
+        android:layout_marginTop="16dp"
+        android:text="@string/Number_Of_Bonds"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextNumOfBonds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewPriceBonds"
+        android:layout_alignLeft="@+id/EditTextPreferredStock"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="19000"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextPriceBonds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewPriceBonds"
+        android:layout_alignLeft="@+id/editTextNumOfBonds"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1000"
+        android:textAppearance="?android:attr/textAppearanceSmall" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewYieldCurve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewPriceBonds"
+        android:layout_below="@+id/textViewPriceBonds"
+        android:layout_marginTop="14dp"
+        android:text="@string/Yeild_Curve_Rate"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextYieldCurve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextPriceBonds"
+        android:layout_below="@+id/editTextPriceBonds"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="13.40"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextViewPreferredStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EditTextPreferredStock"
+        android:layout_alignBottom="@+id/EditTextPreferredStock"
+        android:layout_alignLeft="@+id/textViewYieldCurve"
+        android:layout_alignRight="@+id/textViewNumOfBonds"
+        android:text="@string/Price_Preferred_Stock"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/EditTextPreferredStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextDividendPreferredStock"
+        android:layout_below="@+id/editTextYieldCurve"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="34.63"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextViewTaxRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonCalculate"
+        android:layout_alignLeft="@+id/TextViewCSharesOutstanding"
+        android:text="@string/Tax_Rate"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/EditTextTaxRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonReset"
+        android:layout_below="@+id/TextViewCSharesOutstanding"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="39.00"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewPriceBonds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewNumOfBonds"
+        android:layout_below="@+id/textViewNumOfBonds"
+        android:layout_marginTop="14dp"
+        android:text="@string/Price_Bonds"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextViewGrowthRateDividends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EditTextGrowthRate"
+        android:layout_alignBottom="@+id/EditTextGrowthRate"
+        android:layout_alignLeft="@+id/TextViewCommonPrice"
+        android:layout_alignRight="@+id/TextViewNumOfSharesPreferred"
+        android:text="@string/Growth_Rate_Dividends"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/EditTextGrowthRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextDividendOneYear"
+        android:layout_below="@+id/EditTextCommonPrice"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="3.00"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextViewCSharesOutstanding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextViewTaxRate"
+        android:layout_alignLeft="@+id/TextViewDividendOneYear"
+        android:text="@string/Num_Common_Shares"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextViewDividendPreferredStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EditTextDividendPreferredStock"
+        android:layout_alignBottom="@+id/EditTextDividendPreferredStock"
+        android:layout_alignLeft="@+id/TextViewPreferredStock"
+        android:layout_toLeftOf="@+id/EditTextDividendPreferredStock"
+        android:text="@string/Dividend_Prefered_Stock"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextViewNumOfSharesPreferred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewDividendPreferredStock"
+        android:layout_below="@+id/TextViewDividendPreferredStock"
+        android:layout_toLeftOf="@+id/EditTextNumSharesPreferred"
+        android:text="@string/Number_Of_PreferredStocks"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextViewDividendOneYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextViewCSharesOutstanding"
+        android:layout_alignLeft="@+id/TextViewGrowthRateDividends"
+        android:text="@string/Dividend_One_Year"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/EditTextDividendOneYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextViewDividendOneYear"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="4.11"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/EditTextNumOfCommonShares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextViewCSharesOutstanding"
+        android:layout_alignBottom="@+id/TextViewCSharesOutstanding"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="307000"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

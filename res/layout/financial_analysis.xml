@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light" >
+
+    <TextView
+        android:id="@+id/textViewSalariesRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCOGS"
+        android:layout_below="@+id/textViewCOGS"
+        android:layout_marginTop="22dp"
+        android:text="@string/Salaries_and_Rent"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewDepreciation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSalariesRent"
+        android:layout_below="@+id/textViewSalariesRent"
+        android:layout_marginTop="20dp"
+        android:text="@string/Depreciation"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextCOGS"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCOGS"
+        android:layout_alignBottom="@+id/textViewCOGS"
+        android:layout_alignLeft="@+id/editTextSalariesRent"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="233340" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextSalariesRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewSalariesRent"
+        android:layout_alignBottom="@+id/textViewSalariesRent"
+        android:layout_toRightOf="@+id/textViewCOGS"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="185550" />
+
+    <EditText
+        android:id="@+id/editTextDepreciation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewDepreciation"
+        android:layout_alignBottom="@+id/textViewDepreciation"
+        android:layout_alignLeft="@+id/editTextSalariesRent"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="33800" />
+
+    <EditText
+        android:id="@+id/editTextEBIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewEBIT"
+        android:layout_alignLeft="@+id/editTextDepreciation"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="203200" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonCalculate"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textViewCOGS"
+        android:text="@string/Reset_Values" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_alignRight="@+id/textViewDepreciation"
+        android:text="@string/Calculate" />
+
+    <EditText
+        android:id="@+id/EditTextCurrentAssets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditTextInventoryRatio"
+        android:layout_toRightOf="@+id/textViewCOGS"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="3099060" />
+
+    <EditText
+        android:id="@+id/EditTextTotalAssets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditTextCurrentAssets"
+        android:layout_toRightOf="@+id/textViewCOGS"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="4123460" />
+
+    <TextView
+        android:id="@+id/TextViewInventoryRatio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewEBIT"
+        android:layout_alignRight="@+id/textViewCOGS"
+        android:layout_below="@+id/textViewEBIT"
+        android:text="@string/Inventory_TurnOver_Ratio"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/EditTextInventoryRatio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextViewInventoryRatio"
+        android:layout_toRightOf="@+id/TextViewInventoryRatio"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="7.1" />
+
+    <EditText
+        android:id="@+id/EditTextLongTermDebt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextTotalAssets"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditTextTotalAssets"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1003320" />
+
+    <TextView
+        android:id="@+id/TextViewStEquity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonCalculate"
+        android:layout_alignLeft="@+id/buttonCalculate"
+        android:text="@string/St_Equity"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewCOGS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Cost_Of_Goods_Sold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewCurrentAssets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditTextCurrentAssets"
+        android:layout_alignLeft="@+id/TextViewInventoryRatio"
+        android:text="@string/Current_Assets"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewTotalAssets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditTextTotalAssets"
+        android:layout_alignLeft="@+id/TextViewStEquity"
+        android:text="@string/Total_Assets"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewEBIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewTotalAssets"
+        android:layout_below="@+id/editTextDepreciation"
+        android:layout_marginTop="16dp"
+        android:text="@string/EBIT"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewLongTermDebt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditTextStEquity"
+        android:layout_alignLeft="@+id/textViewDepreciation"
+        android:text="@string/Long_Term_Debt"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/EditTextStEquity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonReset"
+        android:layout_alignLeft="@+id/buttonReset"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1409330" />
+
+</RelativeLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light" >
+
+    <EditText
+        android:id="@+id/editTextCashFlow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCashFlow1"
+        android:layout_alignBottom="@+id/textViewCashFlow1"
+        android:layout_toRightOf="@+id/textViewCashFlow0"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:text="1320" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonCalculate"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textViewCashFlow0"
+        android:text="@string/Reset_Values" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu" />
+
+    <TextView
+        android:id="@+id/textViewCashFlow0"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/CASH_FLOW_0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextCashFlow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewCashFlow2"
+        android:layout_alignLeft="@+id/editTextCashFlow3"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:text="1320" />
+
+    <EditText
+        android:id="@+id/editTextCashFlow0"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewCashFlow0"
+        android:layout_toRightOf="@+id/textViewCashFlow0"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="2600" />
+
+    <TextView
+        android:id="@+id/textViewCashFlow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCashFlow0"
+        android:layout_below="@+id/textViewCashFlow0"
+        android:layout_marginTop="14dp"
+        android:text="@string/CASH_FLOW_1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewCashFlow2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCashFlow1"
+        android:layout_marginTop="17dp"
+        android:layout_toLeftOf="@+id/editTextCashFlow1"
+        android:text="@string/CASH_FLOW_2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextCashFlow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCashFlow3"
+        android:layout_alignBottom="@+id/textViewCashFlow3"
+        android:layout_alignLeft="@+id/EditTextCashFlow4"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:text="1320" />
+
+    <EditText
+        android:id="@+id/EditTextCashFlow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCashFlow3"
+        android:layout_toRightOf="@+id/textViewCashFlow2"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:text="1320" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextViewCashFlow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditTextCashFlow4"
+        android:layout_alignLeft="@+id/textViewCashFlow3"
+        android:text="@string/CashFlow4"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewCashFLow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextCashFlow5"
+        android:layout_alignLeft="@+id/TextViewCashFlow4"
+        android:text="@string/CashFlow5"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextCashFlow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextCashFlow4"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditTextCashFlow4"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:text="1320" />
+
+    <TextView
+        android:id="@+id/TextViewInflationRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditTextInflationRate"
+        android:layout_alignLeft="@+id/TextViewCashFLow5"
+        android:text="@string/Inflation_Rate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextViewCashFlow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditTextCostOfCapital"
+        android:layout_alignLeft="@+id/TextViewCostOfCapital"
+        android:text="@string/CashFlow7"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/EditTextInflationRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonReset"
+        android:layout_toRightOf="@+id/textViewCashFlow2"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="7.00" />
+
+    <EditText
+        android:id="@+id/EditTextCostOfCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextInflationRate"
+        android:layout_below="@+id/EditTextCashFlow7"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="9.00" />
+
+    <TextView
+        android:id="@+id/TextViewCostOfCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EditTextCostOfCapital"
+        android:layout_alignBottom="@+id/EditTextCostOfCapital"
+        android:layout_alignLeft="@+id/TextViewInflationRate"
+        android:text="@string/Cost_Of_Capital"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_alignRight="@+id/TextViewInflationRate"
+        android:text="@string/Calculate" />
+
+    <EditText
+        android:id="@+id/EditTextCashFlow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextCostOfCapital"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextViewCashFlow6"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/EditTextCashFlow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextViewCashFLow5"
+        android:layout_toRightOf="@+id/textViewCashFlow2"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/TextViewCashFlow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditTextCashFlow6"
+        android:layout_alignLeft="@+id/TextViewCashFLow5"
+        android:text="@string/CashFlow6"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewCashFlow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCashFlow2"
+        android:layout_below="@+id/textViewCashFlow2"
+        android:text="@string/CASH_FLOW_3"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FIN 623</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="PAYBACK_PERIOD">Payback Period Years</string>
+    <string name="CASH_FLOW_0">Cash Flow 0</string>
+    <string name="CASH_FLOW_1">Cash Flow 1</string>
+    <string name="CASH_FLOW_2">Cash Flow 2</string>
+    <string name="CASH_FLOW_3">Cash Flow 3</string>
+    <string name="CASH_FLOW_4">Cash Flow 4</string>
+    <string name="CASH_FLOW_5">Cash Flow 5</string>
+    <string name="PAYBACK">PayBack</string>
+    
+    <string name="Cost_Of_Goods_Sold">Cost of Goods Sold</string>
+    <string name="Salaries_and_Rent">Salaries and Rent</string>
+    <string name="Depreciation">Depreciation</string>
+    <string name="EBIT">EBIT</string>
+    <string name="Inventory_TurnOver_Ratio">Inventory TurnOverRatio</string>
+    <string name="Current_Assets">Current Assets</string>
+    <string name="Total_Assets">Total Assets</string>
+    <string name="Long_Term_Debt">Long Term Debt</string>
+    <string name="St_Equity">St Equity</string>
+    
+    <string name="Shares">Shares</string>
+    <string name="Price">Price</string>
+    <string name="Expected_Return">Expected Return</string>
+    <string name="Market_Risk_Premium">Market Risk Premium %</string>
+    <string name="Portfolio_Beta">Portfolio Beta</string>
+    
+    
+    <string name="Sales">Sales</string>
+    <string name="COGS">COGS</string>
+    <string name="Expense">Expenses</string>
+    <string name="TaxRate">Tax Rate</string>
+    <string name="Assets">"Assets"</string>
+    <string name="Debt">Debt</string>
+    <string name="Debt_2">Debt 2</string>
+    <string name="Coupon_Rate">Coupon Rate</string>
+    
+    
+    <string name="ROE">ROE %</string>
+    <string name="Interest_Expense">Interest Expense</string>
+    <string name="Coupon_Rate_On_Bonds">Coupon Rate On Bonds %</string>
+    <string name="Equity_Multiplier">Equity Multiplier</string>
+    <string name="Gross_Profits">Gross Profits</string>
+    <string name="COGS_Percent_Of_Sales">COGS Percent Of Sales %</string>
+    
+    
+    <string name="Debt_Maturity">Debt Maturity in Years</string>
+    <string name="Number_Of_Bonds">Number Of Bonds</string>
+    <string name="Price_Bonds">Selling Price Bonds</string>
+    <string name="Yeild_Curve_Rate">Yield Curve Rate %</string>
+    <string name="Price_Preferred_Stock">Price PrefStock</string>
+    <string name="Dividend_Prefered_Stock">Dividend</string>
+    <string name="Number_Of_PreferredStocks">Number Of Pref Stocks</string>
+    <string name="Common_Price">Common Price</string>
+    <string name="Growth_Rate_Dividends">Growth Rate</string>
+    <string name="Dividend_One_Year">Dividend In One Year</string>
+    <string name="Num_Common_Shares">Common Shares</string>
+    <string name="Tax_Rate">"Tax Rate"</string>
+    
+    
+    <string name="CashFlow0">Cash Flow 0</string>
+    <string name="CashFlow1">Cash Flow 1</string>
+    <string name="CashFlow2">Cash Flow 2</string>
+    <string name="CashFlow3">Cash Flow 3</string>
+    <string name="CashFlow4">Cash Flow 4</string>
+    <string name="CashFlow5">Cash Flow 5</string>
+    <string name="CashFlow6">Cash Flow 6</string>
+    <string name="CashFlow7">Cash Flow 7</string>
+    <string name="Cost_Of_Capital">Cost Of Capital</string> 
+    
+    
+    
+    
+    
+    
+    
+    
+    <string name="Present_Value">Present Value $</string>
+    <string name="Future_Value">Future Value $</string>
+    <string name="Inflation_Rate">Inflation Rate</string>
+    <string name="No_of_years">No Of Years</string>
+    <string name="Calculate">Calculate</string>
+    <string name="Reset_Values">Reset</string>
+    
+    <string name="RB_FUTURE_VALUE">Future Value</string>
+    <string name="RB_PRESENT_VALUE">Present Value</string>
+    <string name="RB_NO_OF_YEARS">Number Of Years</string>
+    <string name="RB_INFLATION_RATE">Inflation Rate</string>
+    
+    <string name="Present_Future_Values">Present/Future Values</string>
+    <string name="Compounding_Interest">Compounding Interest</string>
+    
+    
+    <string name="Principal_Amnt">Principal Amount $</string>
+    <string name="AnnualRateOfReturn">Annual Rate of Return</string>
+    <string name="Return_On_Investment">Return On Investment $</string>
+    <string name="InvestEveryYear">Invest every year</string>
+    <string name="Average_Inflation_Rate">Average Inflation Rate</string>
+    
+    <string name="RB_Cal_ROI">ROI</string>
+    <string name="RB_CAL_ANNUALRATE">Annual Rate</string>
+    <string name="RB_CAL_PRINCIPAL_AMNT">Principal Amount</string>
+    <string name="RB_CAL_NoOfYears">No Of Years</string>
+    
+    
+    <string name="Income">Total Income per month $</string>
+    <string name="Expenses">Total Expenses per month  $</string>
+    <string name="Loans">Total Loan amount per month $</string>
+    <string name="Net_Worth">Net Worth</string>
+    
+    <string name="Enter_Amount">Enter Value in $</string>
+    <string name="Enter_Number">Enter Number</string>
+    
+    
+    <string name="US_Inflation_Rate">3.5</string>
+    <string name="DEFAULT_NUM">0</string>
+    
+
+</resources>

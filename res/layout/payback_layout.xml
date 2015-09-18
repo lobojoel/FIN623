@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light" >
+
+    <TextView
+        android:id="@+id/textViewPaybackPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/PAYBACK_PERIOD"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewCF0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewPaybackPeriod"
+        android:layout_below="@+id/textViewPaybackPeriod"
+        android:layout_marginTop="22dp"
+        android:text="@string/CASH_FLOW_0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewCF1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCF0"
+        android:layout_below="@+id/textViewCF0"
+        android:layout_marginTop="20dp"
+        android:text="@string/CASH_FLOW_1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextPaybackPeriod"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewPaybackPeriod"
+        android:layout_alignBottom="@+id/textViewPaybackPeriod"
+        android:layout_alignLeft="@+id/editTextCF0"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="2.34" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextCF0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCF0"
+        android:layout_alignBottom="@+id/textViewCF0"
+        android:layout_toRightOf="@+id/textViewPaybackPeriod"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="214" />
+
+    <EditText
+        android:id="@+id/editTextCF1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCF1"
+        android:layout_alignBottom="@+id/textViewCF1"
+        android:layout_alignLeft="@+id/editTextCF0"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="53" />
+
+    <TextView
+        android:id="@+id/textViewCF2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCF1"
+        android:layout_below="@+id/editTextCF1"
+        android:layout_marginTop="28dp"
+        android:text="@string/CASH_FLOW_2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextCF2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewCF2"
+        android:layout_alignLeft="@+id/editTextCF1"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="76" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCF2"
+        android:layout_centerVertical="true"
+        android:text="@string/Calculate" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonCalculate"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textViewPaybackPeriod"
+        android:text="@string/Reset_Values" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu" />
+
+</RelativeLayout>

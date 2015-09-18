@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light" >
+
+     <EditText
+         android:id="@+id/editPresentValue"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:ems="10"
+         android:hint="@string/Enter_Amount"
+         android:inputType="number|numberDecimal"
+         android:text="0" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewPresentValue"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editPresentValue"
+        android:layout_alignParentRight="true"
+        android:text="@string/Present_Value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editFutureValue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editPresentValue"
+        android:layout_alignRight="@+id/editPresentValue"
+        android:layout_below="@+id/editPresentValue"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="@string/Enter_Amount"
+        android:inputType="number|numberDecimal"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textFutureValue"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editFutureValue"
+        android:layout_alignLeft="@+id/textViewPresentValue"
+        android:text="@string/Future_Value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editInflationRate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editFutureValue"
+        android:layout_alignRight="@+id/editFutureValue"
+        android:layout_below="@+id/editFutureValue"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="@string/Enter_Number"
+        android:inputType="number|numberDecimal"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textInflationRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editInflationRate"
+        android:layout_alignLeft="@+id/textFutureValue"
+        android:text="@string/Inflation_Rate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/bCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditNoOfYears"
+        android:layout_alignRight="@+id/EditNoOfYears"
+        android:layout_below="@+id/EditNoOfYears"
+        android:layout_marginTop="38dp"
+        android:text="@string/Calculate" />
+
+    <Button
+        android:id="@+id/bReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bCalculate"
+        android:layout_alignBottom="@+id/bCalculate"
+        android:layout_alignLeft="@+id/textInflationRate"
+        android:layout_alignRight="@+id/textInflationRate"
+        android:text="@string/Reset_Values" />
+
+    <TextView
+        android:id="@+id/textViewPFV_Message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bCalculate"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textNoOfYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditNoOfYears"
+        android:layout_alignLeft="@+id/bReset"
+        android:text="@string/No_of_years"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/EditNoOfYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/editInflationRate"
+        android:layout_below="@+id/editInflationRate"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/Enter_Number"
+        android:inputType="number|numberDecimal"
+        android:text="0" />
+
+    <RadioButton
+        android:id="@+id/radioButtonPresentValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bReset"
+        android:layout_alignTop="@+id/textViewPFV_Message"
+        android:layout_marginTop="30dp"
+        android:text="@string/RB_PRESENT_VALUE" />
+
+    <RadioButton
+        android:id="@+id/radioButtonFutureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radioButtonPresentValue"
+        android:layout_alignBottom="@+id/radioButtonPresentValue"
+        android:layout_alignParentLeft="true"
+        android:text="@string/RB_FUTURE_VALUE" />
+
+    <RadioButton
+        android:id="@+id/radioButtonNumOfYears_PFVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioButtonFutureValue"
+        android:text="@string/No_of_years" />
+
+</RelativeLayout>

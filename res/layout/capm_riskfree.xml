@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light" >
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonCalculate"
+        android:layout_alignLeft="@+id/textViewExpReturn"
+        android:layout_alignParentRight="true"
+        android:text="@string/Reset_Values" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu" />
+
+    <TextView
+        android:id="@+id/textViewShares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Shares"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewShares"
+        android:layout_toRightOf="@+id/buttonCalculate"
+        android:text="@string/Price"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewExpReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextShare1"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewPrice"
+        android:text="@string/Expected_Return"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextShare1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textViewShares"
+        android:layout_below="@+id/textViewShares"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="560" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextShare1"
+        android:layout_alignRight="@+id/textViewPrice"
+        android:layout_toRightOf="@+id/buttonCalculate"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="4.00" />
+
+    <EditText
+        android:id="@+id/editTextReturn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextPrice1"
+        android:layout_alignBottom="@+id/editTextPrice1"
+        android:layout_alignLeft="@+id/textViewExpReturn"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="16.5" />
+
+    <EditText
+        android:id="@+id/EditTextShares2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/editTextShare1"
+        android:layout_below="@+id/editTextShare1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="560" />
+
+    <EditText
+        android:id="@+id/EditTextShares3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/EditTextShares2"
+        android:layout_below="@+id/EditTextShares2"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="600" />
+
+    <EditText
+        android:id="@+id/EditTextPrice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditTextShares3"
+        android:layout_alignLeft="@+id/editTextPrice1"
+        android:layout_alignRight="@+id/editTextPrice1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="7.00" />
+
+    <EditText
+        android:id="@+id/EditTextPrice3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EditTextShares3"
+        android:layout_alignBottom="@+id/EditTextShares3"
+        android:layout_alignLeft="@+id/EditTextPrice2"
+        android:layout_alignRight="@+id/EditTextPrice2"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="7.00" />
+
+    <EditText
+        android:id="@+id/EditTextReturn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditTextShares3"
+        android:layout_alignLeft="@+id/editTextReturn1"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="10.5" />
+
+    <EditText
+        android:id="@+id/EditTextReturn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EditTextPrice3"
+        android:layout_alignBottom="@+id/EditTextPrice3"
+        android:layout_alignLeft="@+id/EditTextReturn2"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="10.4" />
+
+    <TextView
+        android:id="@+id/textViewPremium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/EditTextShares3"
+        android:layout_marginTop="17dp"
+        android:text="@string/Market_Risk_Premium"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewBeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonCalculate"
+        android:layout_alignParentLeft="true"
+        android:text="@string/Portfolio_Beta"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextPremium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewPremium"
+        android:layout_alignBottom="@+id/textViewPremium"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/textViewPremium"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="4.4" />
+
+    <EditText
+        android:id="@+id/editTextBeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewBeta"
+        android:layout_alignBottom="@+id/textViewBeta"
+        android:layout_alignLeft="@+id/editTextPremium"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1.64" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:text="@string/Calculate" />
+
+</RelativeLayout>

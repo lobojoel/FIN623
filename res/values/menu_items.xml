@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_items">
+        <item >Present/Future Value</item>
+        <item >Compounding Interest</item>
+        <item >Net Worth</item>
+        <item >Payback</item>
+        <item >Financial Analysis</item>
+        <item >CAPM Risk Free</item>
+        <item >Impact Of Debt(leverage)</item>
+        <item >Asset Turnover</item>
+        <item >WACC</item>
+        <item >Fisher and Inflation</item>
+    </string-array>
+</resources>

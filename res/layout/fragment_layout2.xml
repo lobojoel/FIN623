@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editTextPrincipalAmnt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/Enter_Amount"
+        android:inputType="number|numberDecimal"
+        android:text="0" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewPrincipalAmnt"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextPrincipalAmnt"
+        android:layout_alignParentRight="true"
+        android:text="@string/Principal_Amnt"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu" />
+
+    <TextView
+        android:id="@+id/textViewNoOfYears"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextNoOfYears"
+        android:layout_alignLeft="@+id/textViewPrincipalAmnt"
+        android:text="@string/No_of_years"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu" />
+
+    <TextView
+        android:id="@+id/textViewAnnualRate"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextAnnualRate"
+        android:layout_alignLeft="@+id/textViewNoOfYears"
+        android:text="@string/AnnualRateOfReturn"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu" />
+
+    <TextView
+        android:id="@+id/textViewReturnOnInvestment"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextReturnOnInvestment"
+        android:layout_alignLeft="@+id/textViewAnnualRate"
+        android:text="@string/Return_On_Investment"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu" />
+
+    <CheckBox
+        android:id="@+id/checkBoxInvestAnnually"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextPrincipalAmnt"
+        android:text="@string/InvestEveryYear" />
+
+    <Button
+        android:id="@+id/bResetROI"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bCalculateROI"
+        android:layout_alignBottom="@+id/bCalculateROI"
+        android:layout_alignLeft="@+id/textViewReturnOnInvestment"
+        android:layout_alignRight="@+id/textViewReturnOnInvestment"
+        android:text="@string/Reset_Values" />
+
+    <TextView
+        android:id="@+id/textViewMessageROI"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewAvgInflation"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextInflationRate"
+        android:layout_alignLeft="@+id/bResetROI"
+        android:text="@string/Average_Inflation_Rate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextNoOfYears"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/checkBoxInvestAnnually"
+        android:layout_below="@+id/checkBoxInvestAnnually"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/Enter_Number"
+        android:inputType="number|numberDecimal"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/editTextAnnualRate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editTextNoOfYears"
+        android:layout_below="@+id/editTextNoOfYears"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/Enter_Number"
+        android:inputType="number|numberDecimal"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/editTextInflationRate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/editTextAnnualRate"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="@string/Enter_Number"
+        android:inputType="numberDecimal"
+        android:text="@string/US_Inflation_Rate" />
+
+    <Button
+        android:id="@+id/bCalculateROI"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewMessageROI"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/Calculate" />
+
+    <EditText
+        android:id="@+id/editTextReturnOnInvestment"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bCalculateROI"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/editTextPrincipalAmnt"
+        android:ems="10"
+        android:hint="@string/Enter_Number"
+        android:inputType="number|numberDecimal"
+        android:text="0" />
+
+    <RadioButton
+        android:id="@+id/radioButtonCalROI"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/bCalculateROI"
+        android:layout_alignTop="@+id/textViewMessageROI"
+        android:text="@string/RB_Cal_ROI" />
+
+    <RadioButton
+        android:id="@+id/radioButtonNoOfYears"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioButtonCalROI"
+        android:text="@string/RB_CAL_NoOfYears" />
+
+    <RadioButton
+        android:id="@+id/radioButtonAnnualRate"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioButtonNoOfYears"
+        android:layout_alignParentRight="true"
+        android:text="@string/RB_CAL_ANNUALRATE" />
+
+</RelativeLayout>
